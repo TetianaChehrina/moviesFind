@@ -1,0 +1,31 @@
+.container {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 26px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 40px 80px;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+}

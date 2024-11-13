@@ -1,0 +1,16 @@
+.trailerSection {
+  margin-top: 20px;
+}
+
+.trailerList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.trailerItem {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 16/9;
+  background-color: #000;
+}
