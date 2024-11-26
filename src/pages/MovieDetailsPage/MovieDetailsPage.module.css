@@ -98,6 +98,16 @@
     gap: 15px;
     font-size: 16px;
   }
+  .addInfo {
+    padding-left: 20px;
+  }
+  .backLink {
+    width: 80px;
+  }
+
+  .btnBack {
+    padding-left: 30px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -134,7 +144,7 @@
   }
 
   .addInfo {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
   }
   .add_list {

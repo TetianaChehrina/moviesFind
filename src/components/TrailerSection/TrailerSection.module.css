@@ -6,11 +6,27 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  padding-left: 10px;
 }
 
 .trailerItem {
-  width: 100%;
+  width: calc(100% - 20px);
   max-width: 320px;
   aspect-ratio: 16/9;
   background-color: #000;
+}
+.title {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .trailerList {
+    margin-left: 20px;
+  }
+
+  .title {
+    padding-left: 20px;
+    font-size: 28px;
+    font-weight: 700;
+  }
 }

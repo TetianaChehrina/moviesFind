@@ -1,32 +1,48 @@
 .app {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .sidebar {
+  flex-direction: column;
   width: 100%;
+  align-items: flex-start;
+  width: 270px;
+
   background-color: #1c1c24;
-  padding: 20px;
+  padding: 10px 15px;
   color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 200px;
+  position: relative;
   z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .content {
   flex: 1;
+
   padding: 20px;
-  margin-top: 220px;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 .container {
-  max-width: 320px;
+  max-width: 1440px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -36,35 +52,31 @@
 
   .sidebar {
     width: 200px;
-    height: 100vh;
     position: fixed;
     top: 0;
+    left: 0;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .content {
-    margin-left: 200px;
-    margin-top: 0;
+    margin-left: 217px;
+    padding: 15px;
   }
 
   .container {
     max-width: 768px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: 1440px) {
+  .content {
+    margin-left: 230px;
+    padding: 40px 40px;
+  }
+
   .container {
     max-width: 1440px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-  .sidebar {
-    width: 200px;
-    padding: 30px;
-  }
-
-  .content {
-    margin-left: 200px;
   }
 }

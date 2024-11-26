@@ -22,7 +22,7 @@ const TrailerSection = ({ movieId }) => {
 
   return (
     <div className={css.trailerSection}>
-      <h2>Trailers</h2>
+      <h2 className={css.title}>Trailers</h2>
       {trailers.length > 0 ? (
         <div className={css.trailerList}>
           {trailers.map((trailer) => (
